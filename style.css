@@ -5,3 +5,16 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.noto-serif-uniquifier {
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.inter-uniquifier {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
