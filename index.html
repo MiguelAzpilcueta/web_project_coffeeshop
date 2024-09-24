@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Diblik Mendizábal" />
+    <meta name="description" content="Una página de una cafetería" />
+    <meta name="keywords" content="Cafetería, servicio, comida, menú" />
+    <title>Cafetería Tripleten</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logotipo de la Biblioteca Triple Peaks"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a class="nav__link" href="#recipes">Recetas</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#reservation">Reservar una mesa</a>
+            </li>
+            <li>
+              <a class="nav__link" href="">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="header__span-accent">Café de especialidad</span>
+          en &nbsp;Triple &nbsp;Peaks
+        </h1>
+        <p class="header__description">
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aqui tenemos café
+          para darte energia y motivar tu creatividad.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Dentro del coffee shop"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <div class="header__timetable">
+            <p class="header__paragraph">Horario:</p>
+            <p class="header__paragraph">
+              Lunes a Viernes (de 10:00h a 19:00h)
+            </p>
+            <p class="header__paragraph">
+              Sabados y Domingos (de 11:00h a 18:00h)
+            </p>
+          </div>
+          <div class="header__address">
+            <p class="header__paragraph">
+              Avenida del Exito 200, Ciudad Triple Peaks
+            </p>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="recipes" id="section-recipes">
+          <h2 class="recipes__title">Recetas</h2>
+          <h3 class="recipes__subtitle">
+            Echa un vistzo a las recetas que hemos reunido para que elabores tus
+            propios snacks.
+          </h3>
+          <div class="recipes__videos"></div>
+        </section>
+        <section class="reservation" id="section-reservation"></section>
+      </main>
+      <footer class="footer" id="section-contacts"></footer>
+    </div>
+  </body>
 </html>
