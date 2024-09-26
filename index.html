@@ -1,41 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Esta es una breve descripción de 1-2 oraciones sobre el contenido de la página.">
-  <meta name="author" content="Miguel Angel Arellano Azpilcueta">
-  <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
-  <title>Cafetería Tripleten</title>
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" href="./vendor/normalize.css" />
-  <link rel="stylesheet" href="./pages/index.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafetería</title>
+  <meta name="description" content="Pagina web para una cafeteria." />
+  <meta name="author" content="Miguel Angel Azpilcueta" />
+  <meta name="keywords" content="Cafe,snacks,reservacion" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="./vendor/normalize.css" />
+  <link rel="stylesheet" href="pages/index.css" />
+  <link rel="icon" href="favicon_coffee_bean.ico" type="image/x-icon" />
 </head>
 
 <body>
   <div class="page">
     <header class="header">
-
+      <nav class="nav">
+        <img src="images/logo_coffeeshop_dark.svg" alt="Logotipo de la Biblioteca Triple Peaks" class="nav__logo" />
+        <ul class="nav__links">
+          <li>
+            <a class="nav__link">Recetas</a>
+          </li>
+          <li>
+            <a class="nav__link">Reservar una mesa</a>
+          </li>
+          <li>
+            <a class="nav__link">Contactos</a>
+          </li>
+        </ul>
+      </nav>
+      <img src="images/background_header.svg" alt="fondo header" class="header__background" />
+      <div class="header__content">
+        <div class="header__text">
+          <h1 class="header__title">
+            <span class="span-accent">Café de especialidad</span>
+            <span class="span-black">en Triple Peaks</span>
+          </h1>
+          <p class="header__description">
+            ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
+            café para darte energía y motivar tu creatividad.
+          </p>
+        </div>
+        <img src="images/inside_coffee_shop.png" alt="Ilustración 'Dentro de la biblioteca'" class="header__image" />
+      </div>
+      <div class="header__footer">
+        <p class="header__horarios">
+          Horario: <br />
+          Lunes a Viernes (de 10:00h a 19:00h) <br />
+          Sábados y Domingos (de 11:00h a 18:00h) <br />
+        </p>
+        <p class="header__copy">Avenida del Éxito 200, Ciudad Triple Peaks</p>
+      </div>
     </header>
-    <main class="content">
-      <section class="recipes" id="section-recipes">
-        <!-- <h2 class="recipes__title">Recetas</h2>
-        <h3 class="recipes__subtitle">
-          Echa un vistazo a las recetas que hemos reunido para que elabores tus
-          propios snacks.
-        </h3>
-        <div class="recipes__videos"></div> -->
-      </section>
-      <section class="reservation" id="section-reservation"></section>
-    </main>
-    <footer class="footer">
 
+    <!-- Sección de recetas -->
+    <main class="content">
+      <section class="recipes" id="recipes">
+        <h2 class="recipes__title">Recetas</h2>
+        <h3 class="recipes__subtitle">
+          Echa un vistazo a las recetas que hemos reunido para que elabores
+          tus propios snacks.
+        </h3>
+        <div class="recipes__videos">
+          <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/j6VlT_jUVPc?si=YVgLhV_sg9ZIHGRm" title="Receta en Aeropress"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-item__description">
+              <span class="video-item__description-left">Receta en Aeropress.</span>
+              <span class="video-item__description-right">~5 min</span>
+            </div>
+          </div>
+          <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/st571DYYTR8?si=hYw0MxqeQSDXiFUW"
+              title="Receta en cafetera francesa"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-item__description">
+              <span class="video-item__description-left">Receta en cafetera francesa.</span>
+              <span class="video-item__description-right">~15 min</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Agregar más secciones aquí -->
+      <section class="section-reservas" id="reservation"></section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p>© 2024 Miguel Angel Azpilcueta</p>
+      </div>
     </footer>
   </div>
 </body>
